@@ -72,7 +72,7 @@ int main() {
         output_tree.pop();
 
         output_tree.push(create_Node('\0', left->freq + right->freq, left, right));
-    } 
+    }
     //получили дерево
     
     encode(output_tree.top(),"",output_code);
