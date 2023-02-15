@@ -74,11 +74,11 @@ int main() {
         output_tree.push(create_Node('\0', left->freq + right->freq, left, right));
     }
     //получили дерево
+    if(str.size()==1)encode(output_tree.top(),"0",output_code);
+    else encode(output_tree.top(),"",output_code);
     
-    encode(output_tree.top(),"",output_code);
     
-    
-    for (char &ch : str) {out_str += output_code[ch];}
+    for (char ch : str) {out_str += output_code[ch];}
     
     std::cout<<count.size()<<" "<<out_str.size()<<std::endl;
             
