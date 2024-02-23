@@ -74,7 +74,7 @@ int main() {
         output_tree.push(create_Node('\0', left->freq + right->freq, left, right));
     }
     //получили дерево
-    if(str.size()==1)encode(output_tree.top(),"0",output_code);
+    if(count.size()==1)encode(output_tree.top(),"0",output_code);
     else encode(output_tree.top(),"",output_code);
     
     
